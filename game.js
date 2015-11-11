@@ -407,8 +407,8 @@ Ship = function () {
 
     if (KEY_STATUS.up) {
       var rad = ((this.rot-90) * Math.PI)/180;
-      this.acc.x = 0.5 * Math.cos(rad);
-      this.acc.y = 0.5 * Math.sin(rad);
+      this.acc.x = 1 * Math.cos(rad);
+      this.acc.y = 1 * Math.sin(rad);
       this.children.exhaust.visible = Math.random() > 0.1;
     } else {
       this.acc.x = 0;
